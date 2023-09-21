@@ -8,4 +8,4 @@
 
     But about layout, you can change the background in nine images also.
 
-    I hope you like it
+    I hope you like it, if you wanna see more, take a look at mu GitHub
