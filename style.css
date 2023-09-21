@@ -65,12 +65,18 @@ footer a {
     text-decoration: none;
     color: black;
 }
-
+button img{
+    width: 50px;
+}
+body button {
+    position: fixed;
+    cursor: pointer;
+}
 @media screen and (min-width: 721px) {
     
     body{
         height: 100vh;
-        background-image: url(background-image.jpg);
+        background-image: url(components/backgrounds/1.jpg);
         background-size: 140%;
         background-position: center center;
         background-repeat: no-repeat;
@@ -94,7 +100,7 @@ footer a {
 @media screen and (max-width: 720px) {
     main{
         height: 100vh;
-        background-image: url(background-image.jpg);
+        background-image: url(components/backgrounds/1.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;

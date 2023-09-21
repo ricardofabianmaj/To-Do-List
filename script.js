@@ -1,4 +1,5 @@
 const List = document.getElementById('list');
+var n = Number(1)
 
 function AddItem() {
     const InputAdd = document.getElementById('input-add').value.trim();
@@ -32,4 +33,10 @@ function AddItem() {
     })
 
     document.getElementById('input-add').value = '';
+}
+function ChangeBackground() {
+    n = Number(n + 1)
+    document.body.style.backgroundImage(url =`components/backgrounds/{n}.jpg`)
+    document.body.main.style.backgroundImage(url =`components/backgrounds/{n}.jpg`)
+    console.log('Rodando')
 }
