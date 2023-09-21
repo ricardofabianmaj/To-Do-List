@@ -1,5 +1,4 @@
 const List = document.getElementById('list');
-var n = Number(1)
 
 function AddItem() {
     const InputAdd = document.getElementById('input-add').value.trim();
@@ -34,9 +33,26 @@ function AddItem() {
 
     document.getElementById('input-add').value = '';
 }
+
+var n = 1;
+var UrlImage = [
+    'url(components/backgrounds/1.jpg',
+    'url(components/backgrounds/2.jpg',
+    'url(components/backgrounds/3.jpg',
+    'url(components/backgrounds/4.jpg',
+    'url(components/backgrounds/5.jpg',
+    'url(components/backgrounds/6.jpg',
+    'url(components/backgrounds/7.jpg',
+    'url(components/backgrounds/8.jpg',
+    'url(components/backgrounds/9.jpg'
+]
+
 function ChangeBackground() {
-    n = Number(n + 1)
-    document.body.style.backgroundImage(url =`components/backgrounds/{n}.jpg`)
-    document.body.main.style.backgroundImage(url =`components/backgrounds/{n}.jpg`)
-    console.log('Rodando')
+    n++
+    if (n == 9) {
+        n = 0
+    }
+    document.body.style.backgroundImage = UrlImage[n]
+    document.body.main.style.backgroundImage = UrlImage[n]
+    
 }

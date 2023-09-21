@@ -4,8 +4,12 @@
     margin: 0px;
     border: 0px;
 }
+body{
+    background-image: url(components/backgrounds/1.jpg);
+}
 main {
     padding: 10px;
+    
 }
 div#Add-section input{
     height: 30px;
@@ -71,13 +75,21 @@ button img{
 body button {
     position: fixed;
     cursor: pointer;
+    right: 10px;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+}
+body button img {
+    height: 35px;
+    width: 37px;
 }
 @media screen and (min-width: 721px) {
     
     body{
         height: 100vh;
-        background-image: url(components/backgrounds/1.jpg);
-        background-size: 140%;
+        background-size: 110%;
         background-position: center center;
         background-repeat: no-repeat;
     }
@@ -99,8 +111,7 @@ body button {
 }
 @media screen and (max-width: 720px) {
     main{
-        height: 100vh;
-        background-image: url(components/backgrounds/1.jpg);
+        height: 110%;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
